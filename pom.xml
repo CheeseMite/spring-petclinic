@@ -13,7 +13,16 @@
     <version>2.4.2</version>
   </parent>
   <name>petclinic</name>
-
+ 
+  <distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>petclinic</name>
+      <url>http://10.10.10.4:8081/repository/petclinic/</url>
+    </repository>
+  </distributionManagement>
+  
+	
   <properties>
 
     <!-- Generic properties -->
@@ -261,7 +270,7 @@
           </dependency>
           <dependency>
             <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
+            <artifacitId>mockito-core</artifactId>
             <version>${mockito.version}</version>
           </dependency>
         </dependencies>
