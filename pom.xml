@@ -18,7 +18,7 @@
     <repository>
       <id>nexus</id>
       <name>petclinic</name>
-      <url>http://10.10.10.4:8081/repository/petclinic/</url>
+      <url>{{ petclinic_url}}</url>
     </repository>
   </distributionManagement>
   
@@ -270,7 +270,7 @@
           </dependency>
           <dependency>
             <groupId>org.mockito</groupId>
-            <artifacitId>mockito-core</artifactId>
+            <artifactId>mockito-core</artifactId>
             <version>${mockito.version}</version>
           </dependency>
         </dependencies>
